@@ -1,10 +1,12 @@
 {
     "name": "Session Desktop",
     "app_path": [
-        "/opt/Session/"
+        "/opt/Session/",
+        "/var/lib/flatpak/app/network.loki.Session/current/active/files/Session"
     ],
     "icons_path": [
-        "/opt/Session/resources/"
+        "/opt/Session/resources/",
+        "/var/lib/flatpak/app/network.loki.Session/current/active/files/Session/resources"
     ],
     "binary": "app.asar",
     "script": "electron",
