@@ -21,6 +21,7 @@ along with Hardcode-Tray. If not, see <http://www.gnu.org/licenses/>.
 """
 from __future__ import absolute_import
 
+from hashlib import sha256
 from json import dumps, loads
 from struct import error as StructError
 from struct import pack, unpack
@@ -94,6 +95,11 @@ class AsarFile:
             asar = asarfile.read()
 
         set_in_dict(self._header, self._keys + ['size'], len(pngbytes))
+        # Update integrity hash if present (required for newer asar format)
+        if 'integrity' in fileinfo:
+            new_hash = sha256(pngbytes).hexdigest()
+            set_in_dict(self._header, self._keys + ['integrity', 'hash'], new_hash)
+            set_in_dict(self._header, self._keys + ['integrity', 'blocks'], [new_hash])
         # Save the old binary content for backup
         # See electron.py
         self._old_content = asar[offset: offset + size]
