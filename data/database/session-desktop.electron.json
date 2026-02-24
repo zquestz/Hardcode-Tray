@@ -1,10 +1,12 @@
 {
     "name": "Session Desktop",
     "app_path": [
+        "/usr/bin/",
         "/opt/Session/",
         "/var/lib/flatpak/app/network.loki.Session/current/active/files/Session"
     ],
     "icons_path": [
+        "/usr/lib/session-desktop/",
         "/opt/Session/resources/",
         "/var/lib/flatpak/app/network.loki.Session/current/active/files/Session/resources"
     ],
