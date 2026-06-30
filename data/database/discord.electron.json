@@ -9,8 +9,6 @@
         "{userhome}/.config/discord/{discord}/modules/discord_desktop_core-1/discord_desktop_core/",
         "{userhome}/.var/app/com.discordapp.Discord/config/discord/{discord}/modules/discord_desktop_core/"
     ],
-    "binary": "core.asar",
-    "script": "electron",
     "icons": {
         "tray": {
             "original": "app/images/systemtray/linux/tray.png",
