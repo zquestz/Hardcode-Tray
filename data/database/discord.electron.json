@@ -7,7 +7,8 @@
     "icons_path": [
         "{userhome}/.config/discord/{discord}/modules/discord_desktop_core/",
         "{userhome}/.config/discord/{discord}/modules/discord_desktop_core-1/discord_desktop_core/",
-        "{userhome}/.var/app/com.discordapp.Discord/config/discord/{discord}/modules/discord_desktop_core/"
+        "{userhome}/.var/app/com.discordapp.Discord/config/discord/{discord}/modules/discord_desktop_core/",
+        "{userhome}/.var/app/com.discordapp.Discord/config/discord/{discord}/modules/discord_desktop_core-1/discord_desktop_core/"
     ],
     "icons": {
         "tray": {
