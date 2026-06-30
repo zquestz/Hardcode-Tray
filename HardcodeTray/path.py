@@ -30,7 +30,9 @@ def discord_callback(directory):
         directory(str): the default discord config directory
     """
     if path.isdir(directory):
-        return path.isdir(path.join(directory, 'modules/discord_desktop_core'))
+        return (path.isdir(path.join(directory, 'modules/discord_desktop_core'))
+                or path.isdir(path.join(directory,
+                                        'modules/discord_desktop_core-1/discord_desktop_core')))
     return False
 
 

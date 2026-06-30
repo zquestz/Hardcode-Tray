@@ -4,7 +4,8 @@
         "{userhome}/.config/discordcanary"
     ],
     "icons_path": [
-        "{userhome}/.config/discordcanary/{discord}/modules/discord_desktop_core/"
+        "{userhome}/.config/discordcanary/{discord}/modules/discord_desktop_core/",
+        "{userhome}/.config/discordcanary/{discord}/modules/discord_desktop_core-1/discord_desktop_core/"
     ],
     "binary": "core.asar",
     "script": "electron",
